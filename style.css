@@ -3,17 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-html,body{
+ html,body{
     height: 100%;
     width: 100%;
 }
 
-body{
-    background-color: #111;
-}
+
 /* 
 /* h1 {
     color: red;
@@ -62,7 +59,8 @@ button {
     position: absolute;
     left: 100px;
     top: 100px;
-    transform: translate(-50%,-50%);
+    transform: translate(50%,50%);
+    z-index: 9;
 }
 
 #box2{
@@ -71,14 +69,41 @@ button {
     background-color: royalblue;
     border: 2px solid white;
 
+} */
+
+/* #check {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1 span {
+    font-size: 80px;
+    background-color: aquamarine;
+} */
+
+#parent {
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 
+.child {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 2px solid white;
+  
+}
 
-
-
-
-
+body{
+    background-color: #000000;
+}
 
 /* 
 color: red; - This sets the text color of the h1 element to red.
@@ -94,7 +119,7 @@ class is represented as . whereas id are represented as # in CSS selectors. For 
 margin - The margin property is used to create space around elements, outside of any defined borders. It can be set for all four sides (top, right, bottom, left) or individually. In this case, the margin is set to 0 for all elements using the universal selector (*), which means there will be no extra space around any element by default.
 padding - The padding property is used to create space between the content of an element and its border. Similar to margin, it can be set for all four sides or individually. In this case, the padding is also set to 0 for all elements using the universal selector (*), which means there will be no extra space between the content and the border of any element by default.
 border - The border property is used to define the border around an element. It can be customized with different styles, widths, and colors. In this case, the box-sizing property is set to border-box for all elements using the universal selector (*), which means that the width and height of an element will include its padding and border, making it easier to manage layout and sizing.
-
+display : flex; - This sets the display property of the #parent element to flex, which enables the use of the Flexbox layout model. Flexbox allows for more efficient and flexible arrangement of child elements within a container, making it easier to create responsive designs.
 
 
 
