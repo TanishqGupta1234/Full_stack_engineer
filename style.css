@@ -1,5 +1,78 @@
 /* cascading stylesheet (CSS) is a style sheet language used for describing the presentation of a document written in HTML or XML. CSS defines how elements should be displayed on screen, paper, or in other media. It allows you to control the layout, colors, fonts, and overall appearance of web pages. */
-h1 {
-    color: red;
-    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* h1 {
+    color: red;
+    background-color: rgb(36, 35, 35);
+    font-size: 100px;
+    font-family: monospace;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+} */
+
+div{
+        height: 300px;
+        width: 300px;
+}
+
+
+.a{
+    background-color: aquamarine;
+}
+
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+button {
+    margin: 40px;
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: aqua;
+    color: black;
+    font-weight: 600px;
+    border: 2px solid black;
+}
+
+
+/* 
+color: red; - This sets the text color of the h1 element to red.
+background-color: rgb(36, 35, 35); - This sets the background color of the h1 element to a dark shade of gray using RGB values.
+font-size: 24px; - This sets the font size of the h1 element to 24 pixels.
+why using px? they are basically units 
+font-family: this property specifies the font to be used for the text within the h1 element. In this case, it is set to 'Poppins', which is a sans-serif font. If 'Poppins' is not available, it will fall back to any available sans-serif font.
+font-weight: 700; - This sets the font weight of the h1 element to 700, which typically corresponds to a bold font style.
+text-align: center; - This centers the text horizontally within the h1 element.
+id - An id is a unique identifier assigned to an HTML element. It is used to target and style specific elements using CSS or manipulate them using JavaScript. In this case, the h1 element has an id of "heading", which can be referenced in CSS or JavaScript to apply specific styles or functionality to that particular element.
+class - A class is a reusable identifier that can be assigned to multiple HTML elements. It allows you to group elements together and apply the same styles or functionality to them. In this case, the h1 element has a class of "heading", which can be referenced in CSS or JavaScript to apply specific styles or functionality to all elements with that class.
+class is represented as . whereas id are represented as # in CSS selectors. For example, to target the h1 element with the id "heading", you would use #heading in your CSS, while to target all elements with the class "heading", you would use .heading.
+margin - The margin property is used to create space around elements, outside of any defined borders. It can be set for all four sides (top, right, bottom, left) or individually. In this case, the margin is set to 0 for all elements using the universal selector (*), which means there will be no extra space around any element by default.
+padding - The padding property is used to create space between the content of an element and its border. Similar to margin, it can be set for all four sides or individually. In this case, the padding is also set to 0 for all elements using the universal selector (*), which means there will be no extra space between the content and the border of any element by default.
+border - The border property is used to define the border around an element. It can be customized with different styles, widths, and colors. In this case, the box-sizing property is set to border-box for all elements using the universal selector (*), which means that the width and height of an element will include its padding and border, making it easier to manage layout and sizing.
+
+
+
+
+
+
+
+
+
+
+*/
